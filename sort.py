@@ -34,11 +34,11 @@ def bubble_sort(sort_list: list): # 冒泡排序
             flag = False  # end the loop early 提前退出循环标志
             for j in range(0, length - i - 1):
                 if sort_list[j] > sort_list[j + 1]:
-                    sort_list[j], sort_list[j + 1] = sort_list[j + 1], sort_list[j] # 数据交换
-                    flag = True # 表示有数据交换
+                    sort_list[j], sort_list[j + 1] = sort_list[j + 1], sort_list[j]  # 数据交换
+                    flag = True  # 表示有数据交换
                 else:
                     pass
-            if not flag: # 没有进入循环，直接退出
+            if not flag:  # 没有进入循环，直接退出
                 break
         return sort_list
 
