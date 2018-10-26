@@ -6,6 +6,7 @@
 
 __author__ = 'Wingfai Chow <chowwingfai@gmail.com>'
 
+
 class Node(object):
     # single node
     def __init__(self, data):
