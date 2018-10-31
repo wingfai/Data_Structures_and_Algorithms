@@ -26,7 +26,7 @@ def partition(array, low_index, high_index):
     return divider
 
 
-def quick_sort(array, low_index=0, high_index=None):
+def quick_sort(array, low_index=0, high_index=None):  # choose the last data as pivot
     if high_index is None:
         high_index = len(array) - 1
     else:
